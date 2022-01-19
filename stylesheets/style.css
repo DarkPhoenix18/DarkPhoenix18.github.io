@@ -309,8 +309,71 @@ footer{
     height: 20px;
 }
 
+.wrapper .button{
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    float: left;
+    margin: 0 5px;
+    background: #fff;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-out;
+}
+.wrapper .button:hover{
+    width: 125px;
 
-
+}
+.wrapper .button .icon{
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    color: black;
+    border-radius: 25px;
+    box-sizing: border-box;
+    line-height: 30px;
+    transition: all 0.3s ease-out;
+}
+.wrapper .button:nth-child(1):hover .icon{
+  background: #4267B2;
+}
+.wrapper .button:nth-child(2):hover .icon{
+  background: #1DA1F2;
+}
+.wrapper .button:nth-child(3):hover .icon{
+  background: #E1306C;
+}
+.wrapper .button .icon i{
+    font-size: 20px;
+    line-height: 30px;
+}
+.wrapper .button .icon:hover i{
+    color: #fff;
+}
+.wrapper .button span{
+    font-size: 18px;
+    color: black;
+    font-weight: 500;
+    line-height: 30px;
+    margin-left: 5px;
+    transition: all 0.3s ease-out;
+}
+.ftinfo a{
+    color:  white;
+    text-decoration: none;
+}
+.ftinfo a:hover{
+    font-size: 18px;
+    transition:  0.3s ease-out;
+}
+.ftinfo p{
+    line-height: 1.4;
+}
+.credits{
+    text-align: center;
+}
 /* -------------------------------------Register Button------------------------------------------- */
 .register-btn{
     background-color: transparent;
