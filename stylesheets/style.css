@@ -71,11 +71,7 @@
         font-weight: normal;
         font-size: 22px;
     }
-    .navbar{
-        z-index: 1;
-        position: sticky;
-
-    }
+    
     
     .navbar ul{
         display: flex;
