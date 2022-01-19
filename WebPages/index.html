@@ -7,6 +7,8 @@
     <title>Home | JMUN'22</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    
     <link href="https://fonts.googleapis.com/css2?family=Cabin:ital@1&family=Fira+Sans&family=Mochiy+Pop+P+One&family=Quicksand:wght@300&family=Ubuntu+Mono:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../stylesheets/style.css">
     <link rel="stylesheet" href="../stylesheets/homepage.css">
@@ -42,19 +44,24 @@
                     <a href="#">UNHRC</a>
                     <a href="#">Crisis</a>
                     <a href="#">Indian</a>
-                    <a href="#">GPSS</a>
+                    <a href="#">GPS</a>
                     <a href="#">Environmental</a>
                     <a href="#">Beginners</a>
                 </div>  
              </div>
             
-           <li><a href="./register.html">Register</a></li>
+            <div class="dropdown"><li>Register</li>
+                <div class="dropcontent custom-nav-width1">
+                    <a href="./register.html">Delegate Registration</a>
+                    <a href="#">GPS<br> Registration</a>
+                </div>
+            </div>
         </ul>
     </nav>
         <div class="hbox">
             <div class="jmun">Jaipuria Model United Nations <br>
                 <p class="para">Delibrate. Defend. Deliver
-                    <br><br><button class="register-btn"><a href="./register.html">Register Here</a></button>   <button class="register-btn"><a href="./conferenceresources.html">Resources</a></button>
+                    <br><br><button class="register-btn"><a>Register Here</a></button>   <button class="register-btn"><a href="./conferenceresources.html">Resources</a></button>
 
                 </p>
                 
@@ -91,7 +98,6 @@
                     }
                 }
             </style> 
-            <h2>Event CountDown:</h2>  
             <ul>
                 <li><span id="days"></span>days</li>
                 <li><span id="hours"></span>Hours</li>
@@ -181,7 +187,7 @@
       mm = String(today.getMonth() + 1).padStart(2, "0"),
       yyyy = today.getFullYear(),
       nextYear = yyyy + 1,
-      dayMonth = "02/30/",
+      dayMonth = "06/15/",
       birthday = dayMonth + yyyy;
   
   today = mm + "/" + dd + "/" + yyyy;
