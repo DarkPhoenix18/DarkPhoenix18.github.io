@@ -1,16 +1,11 @@
-@import url(/Generica.otf);
-@font-face{
-    font-family: Generica;
-    src:  url(/Generica.otf);
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital@1&family=Fira+Sans&family=Mochiy+Pop+P+One&family=Quicksand:wght@300&family=Ubuntu+Mono:wght@700&display=swap');
 
-}
 *{
     padding: 0;
     margin: 0;
-    font-family: Generica;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     
 }
-
 /* Animations and PreLoader */
 @keyframes transitionin{
     from{
@@ -62,16 +57,16 @@
         animation: transitionin 1s;
     }
     .navbar{
+        
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 20px 40px;
         color: white;   
         background-color: rgba(0, 0, 0,.2);
-        font-weight: normal;
+        font-weight: 900;
         font-size: 22px;
     }
-    
     
     .navbar ul{
         display: flex;
@@ -198,16 +193,16 @@
 .jmun{
     color: white;
     font-size: 3rem;
-    font-weight: normal;
+    font-weight: bold;
     margin-bottom: 4rem;
     padding: 10px;
 }
 
 .para{
     width:30rem;
-    height:10rem;
     font-size: 22px;
-    font-weight: normal;
+    font-weight: bold;
+    border: 2px solid red;
 }
 .navbar  a{
     text-decoration: none;
@@ -293,7 +288,7 @@ footer{
     padding: 10px;
     border: 1px solid white;
     font-size: 16px;
-    font-weight: normal;
+    font-weight: bold;
     transition:ease-in-out .1s;
     border-radius: 2px;
 }
@@ -309,4 +304,36 @@ footer{
 
 .register-btn:hover a{
     color: black;
+}
+
+/* Countdown */
+.countdown{
+    width: max-content;
+    height: fit-content;
+}
+.countdown ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.countdown li {
+    font-size: 16px;
+    list-style-type: none;
+    padding: 1em;
+    text-transform: uppercase;
+    
+}
+
+.countdown li span {
+    display: block;
+    font-size: 1.5rem;
+}
+@media all and (max-width: 768px) {
+    .countdown li {
+        font-size: calc(1.125rem * var(--smaller));
+    }
+    
+    .countdown li span {
+        font-size: calc(3.375rem * var(--smaller));
+    }
 }
