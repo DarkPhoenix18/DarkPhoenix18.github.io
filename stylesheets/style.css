@@ -51,6 +51,31 @@
     animation: gone 1s forwards;
     transition: ease 1s;
 }
+
+
+
+/* ----------------------------------Headings---------------------------- */
+
+h2{
+    font-weight: normal;
+    padding: 1rem;
+    border-bottom: 1px solid black;
+    font-size: 36px;
+}
+h3{
+    font-weight: normal;
+    font-size: 30px;
+}
+h4{
+    font-weight: normal;
+    font-size:  26px;
+}
+h5{
+    font-weight: normal;
+    font-size: 20px;
+}
+
+
 /* Navigation Bar, Banner and Background */
     body{
         /* background-image: url(https://i.gifer.com/Cal.gif); */
@@ -247,7 +272,7 @@
 
 
 
-/* Footer Styling */
+/* ----------------------------------------------------Footer Styling--------------------------------------------------------- */
 footer{
     max-height: 30rem;
     background-color: black;
@@ -286,7 +311,7 @@ footer{
 
 
 
-/* Register Button */
+/* -------------------------------------Register Button------------------------------------------- */
 .register-btn{
     background-color: transparent;
     padding: 10px;
@@ -310,7 +335,11 @@ footer{
     color: black;
 }
 
-/* Countdown */
+
+
+
+
+/* --------------------------------------Countdown----------------------------------------------- */
 .countdown{
     width: max-content;
     height: fit-content;
