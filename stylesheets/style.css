@@ -1,14 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital@1&family=Fira+Sans&family=Mochiy+Pop+P+One&family=Quicksand:wght@300&family=Ubuntu+Mono:wght@700&display=swap');
 
 *{
     padding: 0;
     margin: 0;
-    font-family: Generica;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     
 }
-h2 {
-    font-weight: 500;
-    font-variant: small-caps;
-}
+/* Animations and PreLoader */
 @keyframes transitionin{
     from{
         opacity: 0.1;
@@ -49,17 +47,7 @@ h2 {
     animation: gone 1s forwards;
     transition: ease 1s;
 }
-
-
-
-.active{
-    background:rgb(27, 27, 27);
-    border-radius: 30px;
-}
-
-.active  a{
-    color: white;
-}
+/* Navigation Bar, Banner and Background */
     body{
         /* background-image: url(https://i.gifer.com/Cal.gif); */
         background-image: url(../Images/bg1.jpg);
@@ -76,7 +64,7 @@ h2 {
         padding: 20px 40px;
         color: white;   
         background-color: rgba(0, 0, 0,.2);
-        font-weight: normal;
+        font-weight: 900;
         font-size: 22px;
     }
     
@@ -121,13 +109,72 @@ h2 {
         width:10rem;
     }   
     .navbarlogo{
-        background-image: url(../Images/whitelogo.png);
-        width: 6rem;
-        height: 5rem;
+        background-image: url(../Images/jmun-logo-official.jpg);
+        width: 11rem;
+        height: 6rem;
         background-size: cover;
         margin-left: 10px;
         cursor: pointer;
     }
+    .toggle-button{
+        position: absolute;
+        top: 3rem;
+        right: 2rem;
+        display: none;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 21px;
+    }
+    
+    .toggle-button .bar{
+        height: 3px;
+        width: 100%;
+        background-color: white;
+        border-radius: 5px;
+    }
+    
+    
+    @media(max-width:1000px){
+            .toggle-button{
+                display: flex;
+            }
+            
+            .navbar{
+                background-color: rgba(0, 0, 0,.2);
+                justify-content: space-between;
+                align-items:center;
+            }
+            .navbar ul{
+                display: none;
+                padding: 2rem 0;
+                flex-direction: column;
+            }
+    
+            .dropcontent{
+                position: static;
+            }
+            .dropdown{
+                transition: all ease-in-out 1s;
+            }
+    
+    
+            .navbar ul{
+                flex-direction: column;
+                justify-content:center;
+                align-items: center;
+            }
+    
+             .open{
+                display: flex;
+            }
+    }
+/* Banner Styling */
+
+
+
+
+
 
 .hbox{
     display: flex;
@@ -145,16 +192,17 @@ h2 {
 
 .jmun{
     color: white;
-    font-size: 48px;
-    font-weight: normal;
+    font-size: 3rem;
+    font-weight: bold;
     margin-bottom: 4rem;
+    padding: 10px;
 }
 
 .para{
     width:30rem;
     height:10rem;
     font-size: 22px;
-    font-weight: normal;
+    font-weight: bold;
 }
 .navbar  a{
     text-decoration: none;
@@ -163,7 +211,39 @@ h2 {
 
 .jmun p{
     margin-left: 10px;
+    width: max-content;
 }
+
+@media (max-width:640px){
+    .homelogo{
+        width: 12rem;
+        height: 10rem;
+    }
+    .jmun{
+        font-size: 1.3rem; 
+        margin-top: 20px;       
+    }
+
+    .navbarlogo{
+        width:8rem;
+        height: 5rem;
+    }
+}
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer Styling */
 footer{
     max-height: 30rem;
     background-color: black;
@@ -200,57 +280,7 @@ footer{
     height: 20px;
 }
 
-.toggle-button{
-    position: absolute;
-    top: 3rem;
-    right: 2rem;
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 21px;
-}
 
-.toggle-button .bar{
-    height: 3px;
-    width: 100%;
-    background-color: white;
-    border-radius: 5px;
-}
-
-
-@media(max-width:1000px){
-        .toggle-button{
-            display: flex;
-        }
-        
-        .navbar ul{
-            display: none;
-            padding: 2rem 0;
-        }
-
-        .dropcontent{
-            position: static;
-        }
-        .dropdown{
-            transition: all ease-in-out 1s;
-        }
-
-        .navbar{
-            flex-direction:column ;
-            background-color: rgb(21, 21, 21);
-        }
-
-        .navbar ul{
-            flex-direction: column;
-            justify-content:center;
-            align-items: center;
-        }
-
-         .open{
-            display: flex;
-        }
-}
 
 /* Register Button */
 .register-btn{
@@ -258,7 +288,7 @@ footer{
     padding: 10px;
     border: 1px solid white;
     font-size: 16px;
-    font-weight: normal;
+    font-weight: bold;
     transition:ease-in-out .1s;
     border-radius: 2px;
 }
