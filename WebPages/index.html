@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | JMUN'22</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital@1&family=Fira+Sans&family=Mochiy+Pop+P+One&family=Quicksand:wght@300&family=Ubuntu+Mono:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../stylesheets/style.css">
+    <link rel="stylesheet" href="../stylesheets/homepage.css">
+    <script src="../javascript/general.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="preloader">
+        <img src="../Images/Preloader2.gif" alt="">
+    </div>
+    <nav class="navbar">
+        <div class="navbarlogo"></div>
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="./index.html">Home</a></li>
+            <div class="dropdown"><li>About</li>
+                <div class="dropcontent custom-nav-width1">
+                    <a href="./schoolinfo.html">The School</a>
+                    <a href="./secretariat.html">The Secretariat</a>
+                    <a href="#">Conference Resources</a>
+                </div>
+            </div>
+            <li><a href="./partners.html">Partners</a></li>
+            <div class="dropdown"><li>Committees</li>
+                <div class="dropcontent custom-nav-width2 ">
+                    <a href="#">UNSC</a>
+                    <a href="#">UNGA</a>
+                    <a href="#">UNHRC</a>
+                    <a href="#">Crisis</a>
+                    <a href="#">Indian</a>
+                    <a href="#">GPS</a>
+                    <a href="#">GPS</a>
+                </div>  
+             </div>
+            
+           <li><a href="./register.html">Register</a></li>
+        </ul>
+    </nav>
+        <div class="hbox">
+            <div class="jmun">Jaipuria Model United Nations <br>
+                <p class="para">Delibrate. Defend. Deliver
+                    <br><br><button class="register-btn"><a href="./register.html">Register Here</a></button>   <button class="register-btn"><a href="./conferenceresources.html">Resources</a></button>
+
+                </p>
+                
+            </div>
+            <img src="../Images/logo1.png" alt="" class="homelogo">
+        </div>
+        
+        <div class="countdown">
+            <style>
+                .countdown ul{
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                }
+                .countdown li {
+                    font-size: 40px;
+                    list-style-type: none;
+                    padding: 1em;
+                    text-transform: uppercase;
+                    
+                }
+
+                .countdown li span {
+                    display: block;
+                    font-size: 4.5rem;
+                }
+                @media all and (max-width: 768px) {
+                    .countdown li {
+                        font-size: calc(1.125rem * var(--smaller));
+                    }
+                    
+                    .countdown li span {
+                        font-size: calc(3.375rem * var(--smaller));
+                    }
+                }
+            </style> 
+            <h2>Event CountDown:</h2>  
+            <ul>
+                <li><span id="days"></span>days</li>
+                <li><span id="hours"></span>Hours</li>
+                <li><span id="minutes"></span>Minutes</li>
+                <li><span id="seconds"></span>Seconds</li>
+            </ul>
+
+        </div>
+        <div class="space"></div>
+        <div class="container">
+            <h2>Letters</h2>
+            <div class="letters">
+                <div class="letter-box">
+                    <img src="../Images/principal.jpg" class="letter-image" alt="">
+                    
+                    <p><h3>Name Here</h3><h4>Title Here</h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, natus. Voluptate enim nostrum quisquam nesciunt quaerat. Reprehenderit ea voluptate sed voluptatibus, laudantium laborum excepturi repudiandae expedita illum iure voluptas nesciunt?</p>
+                                    
+                </div>
+
+                <div class="letter-box">
+                    <img src="../Images/co-ordinator.jpg" class="letter-image" alt="">
+                    
+                    <p><h3>Name Here</h3><h4>Title Here</h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, natus. Voluptate enim nostrum quisquam nesciunt quaerat. Reprehenderit ea voluptate sed voluptatibus, laudantium laborum excepturi repudiandae expedita illum iure voluptas nesciunt?</p>
+                </div>
+
+                <div class="letter-box">
+                    <img src="../Images/co-ordinator.jpg" class="letter-image" alt="">
+                    
+                    <p><h3>Name Here</h3><h4>Title Here</h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, natus. Voluptate enim nostrum quisquam nesciunt quaerat. Reprehenderit ea voluptate sed voluptatibus, laudantium laborum excepturi repudiandae expedita illum iure voluptas nesciunt?</p>
+                </div>
+                <h2></h2>
+            </div>        
+        </div>
+
+        <div class="gallery"></div>
+
+<footer>
+    <div class="ftinfo">
+        <div class="col"><div class="footer-heading"><h4>Find Us At:</h4></div><br>
+        <h5>Social Links</h5>
+        <i class="fab fa-facebook" aria-hidden="true"></i>
+        <h5>Address:</h5>  
+        </div>
+        <div class="col"><div class="footer-heading"><h4>Event Info:</h4></div><br>
+        <p> 
+            <!-- Info Regarding Event -->
+        </p>
+        </div> 
+        <div class="col"><div class="footer-heading"><h4>Contact Details:</h4></div><br>
+        <p>
+            E-Mail: <br><br>
+            Phone Number:       
+        </p>        
+        </div>
+        <div class="col">
+            <div class="footer-heading"><h4>Our Partners</h4></div><br>
+            <img src="" alt="">
+
+        </div>
+    </div>
+    <div class="credits">&copy;All Copyrights Reserved to Jaipuria Model United Nations</div>
+</footer>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+<script>
+
+    let loader=document.querySelector(".preloader");    
+    window.addEventListener("load", gone);
+    
+    function gone(){
+        loader.classList.add("disappear")
+    }
+
+
+
+    (function () {
+  const second = 1000,
+        minute = second * 60,
+        hour = minute * 60,
+        day = hour * 24;
+
+  //I'm adding this section so I don't have to keep updating this pen every year :-)
+  //remove this if you don't need it
+  let today = new Date(),
+      dd = String(today.getDate()).padStart(2, "0"),
+      mm = String(today.getMonth() + 1).padStart(2, "0"),
+      yyyy = today.getFullYear(),
+      nextYear = yyyy + 1,
+      dayMonth = "02/30/",
+      birthday = dayMonth + yyyy;
+  
+  today = mm + "/" + dd + "/" + yyyy;
+  if (today > birthday) {
+    birthday = dayMonth + nextYear;
+  }
+  //end
+  
+  const countDown = new Date(birthday).getTime(),
+      x = setInterval(function() {    
+
+        const now = new Date().getTime(),
+              distance = countDown - now;
+
+        document.getElementById("days").innerText = Math.floor(distance / (day)),
+          document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
+          document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
+          document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
+        debugger;
+        //do something later when date is reached
+        if (distance < 0) {
+          document.getElementById("headline").innerText = "It's my birthday!";
+          document.getElementById("countdown").style.display = "none";
+          document.getElementById("content").style.display = "block";
+          clearInterval(x);
+        }
+        //seconds
+      }, 0)
+  }());
+</script>
+</html>
