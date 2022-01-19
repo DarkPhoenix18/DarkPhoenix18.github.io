@@ -1,11 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Cabin:ital@1&family=Fira+Sans&family=Mochiy+Pop+P+One&family=Quicksand:wght@300&family=Ubuntu+Mono:wght@700&display=swap');
+@import url(/Generica.otf);
+@font-face{
+    font-family: Generica;
+    src:  url(/Generica.otf);
 
+}
 *{
     padding: 0;
     margin: 0;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Generica;
     
 }
+
 /* Animations and PreLoader */
 @keyframes transitionin{
     from{
@@ -57,15 +62,19 @@
         animation: transitionin 1s;
     }
     .navbar{
-        
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 20px 40px;
         color: white;   
         background-color: rgba(0, 0, 0,.2);
-        font-weight: 900;
+        font-weight: normal;
         font-size: 22px;
+    }
+    .navbar{
+        z-index: 1;
+        position: sticky;
+
     }
     
     .navbar ul{
@@ -193,7 +202,7 @@
 .jmun{
     color: white;
     font-size: 3rem;
-    font-weight: bold;
+    font-weight: normal;
     margin-bottom: 4rem;
     padding: 10px;
 }
@@ -202,7 +211,7 @@
     width:30rem;
     height:10rem;
     font-size: 22px;
-    font-weight: bold;
+    font-weight: normal;
 }
 .navbar  a{
     text-decoration: none;
@@ -288,7 +297,7 @@ footer{
     padding: 10px;
     border: 1px solid white;
     font-size: 16px;
-    font-weight: bold;
+    font-weight: normal;
     transition:ease-in-out .1s;
     border-radius: 2px;
 }
