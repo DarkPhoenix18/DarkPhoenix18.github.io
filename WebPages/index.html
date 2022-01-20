@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../stylesheets/style.css">
     <link rel="stylesheet" href="../stylesheets/homepage.css">
     <script src="../javascript/general.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
@@ -34,7 +34,7 @@
                     <a href="#">UNHRC</a>
                     <a href="#">Crisis</a>
                     <a href="#">Indian</a>
-                    <a href="#">GPSS</a>
+                    <a href="#">GPS</a>
                     <a href="#">Environmental</a>
                     <a href="#">Beginners</a>
                 </div>  
@@ -69,7 +69,7 @@
         </div>
         <div class="space"></div>
         <div class="container">
-            <h2>Letters</h2>
+            <h2>Message from the Vice Chairperson</h2>
             <div class="letters">
                 <div class="letter-box">
                     <img src="../Images/principal.jpg" class="letter-image" alt="">
@@ -97,29 +97,53 @@
 
 <footer>
     <div class="ftinfo">
-        <div class="col"><div class="footer-heading"><h4>Find Us At:</h4></div><br>
-        <h5>Social Links</h5>
-        <i class="fab fa-facebook" aria-hidden="true"></i>
-        <h5>Address:</h5>  
-        </div>
-        <div class="col"><div class="footer-heading"><h4>Event Info:</h4></div><br>
+         <div class="col"><div class="footer-heading"><h5>Important Information:</h5></div><br>
         <p> 
-            <!-- Info Regarding Event -->
+            Conference Dates:<br>
+            Registration Fees:<br>
+            Conference Platform: Zoom
         </p>
         </div> 
-        <div class="col"><div class="footer-heading"><h4>Contact Details:</h4></div><br>
+        <div class="col"><div class="footer-heading"><h5>Contact Us:</h5></div><br>
         <p>
-            E-Mail: <br><br>
-            Phone Number:       
+            Email: <a href="thejmun@gmail.com">thejmun@gmail.com</a><br>
+            Phone: +91 80XXXXXX18<br>
+        </p>
+        <div class="wrapper">
+            <a href="https://www.facebook.com/watch/TheJMUN/" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+            <div class="button">
+                <div class="icon"><i class="fab fa-facebook-f"></i></div>
+                <span>Facebook</span>
+            </div>
+        </a>
+        <a href="https://twitter.com/the_jmun" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+            <div class="button">
+                <div class="icon"><i class="fab fa-twitter"></i></div>
+                <span>Twitter</span>
+            </div>
+        </a>
+        <a href="https://www.instagram.com/jaipuriamun/?utm_medium=copy_link" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+            <div class="button">
+                <div class="icon"><i class="fab fa-instagram"></i></div>
+                <span>Instagram</span>
+            </div>
+        </a>
+        </div>  
+        </div>
+        <div class="col"><div class="footer-heading"><h5>Links:</h5></div><br>
+        <p class="footlink">
+            <a href="./Delegate Registrations.html">Delegate Registration</a><br>
+            <a href="./GPS Registrations.html">GPS Registration</a><br>
+            <a href="./conference_resources.html">Conference Resources</a>
         </p>        
         </div>
         <div class="col">
-            <div class="footer-heading"><h4>Our Partners</h4></div><br>
+            <div class="footer-heading"><h5>Our Partners</h5></div><br>
             <img src="" alt="">
 
         </div>
     </div>
-    <div class="credits">&copy;All Copyrights Reserved to Jaipuria Model United Nations</div>
+    <div class="credits">Prajval & Vishwesh &copy; 2022</div>
 </footer>
 
 </body>
@@ -167,7 +191,7 @@
           document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
           document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
           document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
-        debugger;
+        
         //do something later when date is reached
         if (distance < 0) {
           document.getElementById("headline").innerText = "It's my birthday!";
