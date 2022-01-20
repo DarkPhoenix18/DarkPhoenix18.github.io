@@ -3,6 +3,11 @@ let navlinks=document.getElementsByClassName("nav-links");
 
 
 function addflex(){
-    navlinks.classList.toggle('open');
+    if(document.getElementsByClassName('open') == null)
+    toggleButton += 'open';
+
+    else
+    toggleButton -= 'open';
 }
-toggleButton.addEventListener('click',addflex());
+
+toggleButton.addEventListner('click',addflex());
