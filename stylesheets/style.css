@@ -203,7 +203,7 @@ h5{
 
 .hbox{
     display: flex;
-    justify-content:center;
+    justify-content:space-evenly;
     align-items: center;
     height: 100vh;
     flex-wrap: wrap-reverse;
@@ -211,9 +211,7 @@ h5{
 .homelogo{
     width:16rem;
     height: 14rem;
-    align-self: flex-end;
-    margin-top: 6rem;
-    margin-left: 10rem;
+    margin-bottom: 5rem;
 }
 
 .jmun{
@@ -240,22 +238,27 @@ h5{
     width: max-content;
 }
 
-@media (max-width:1000px){
+@media (max-width:768px){
+    
     .homelogo{
         width: 12rem;
         height: 10rem;
-        margin-left: 0; 
+        margin-bottom: 0;        
     }
     .jmun{
-        font-size: 1rem;
+        font-size: 1.2rem;
         margin-left: 5vw; 
         text-align: center;   
+        margin-bottom: 10rem;
     }
     .navbarlogo{
         width:8rem;
         height: 5rem;
     }
 
+    .countdown li{
+        padding: 10px;
+    }
 }
 /* ----------------------------------------------------Footer Styling--------------------------------------------------------- */
 footer{
@@ -399,7 +402,7 @@ footer{
     flex-wrap: wrap;
 }
 .countdown li {
-    font-size: 16px;
+    font-size: 28px;
     list-style-type: none;
     padding: 1em;
     text-transform: uppercase;
@@ -408,11 +411,16 @@ footer{
 
 .countdown li span {
     display: block;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
 }
 @media all and (max-width: 768px) {
+    body{
+        overflow:auto;
+    }
+
     .countdown li {
         font-size: calc(1.125rem * var(--smaller));
+        padding: 8px;
     }
     
     .countdown li span {
