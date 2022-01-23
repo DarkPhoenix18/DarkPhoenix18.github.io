@@ -170,14 +170,15 @@ h5{
             }
             
             .navbar{
-                background-color: rgba(0, 0, 0,.2);
-                justify-content: space-between;
-                align-items:center;
+                background-color: rgba(0, 0, 0,.2);                
+                flex-direction: column; 
+                justify-content: left;               
             }
             .navbar ul{
                 display: none;
                 padding: 2rem 0;
                 flex-direction: column;
+                align-self: baseline;
             }
     
             .dropcontent{
@@ -186,17 +187,16 @@ h5{
             .dropdown{
                 transition: all ease-in-out 1s;
             }
-    
+            .navbarlogo{
+                align-self: baseline;
+            }
     
             .navbar ul{
                 flex-direction: column;
                 justify-content:center;
                 align-items: center;
-            }
-    
-             .open{
-                display: flex;
-            }
+            }  
+            
     }
 /* Banner Styling */
 
@@ -209,14 +209,14 @@ h5{
     flex-wrap: wrap-reverse;
 }
 .homelogo{
-    width:16rem;
-    height: 14rem;
+    max-width:16rem;
+    max-height: 14rem;
     margin-bottom: 5rem;
 }
 
 .jmun{
     color: white;
-    font-size: 3rem;
+    font-size: clamp(12px, 26px, 32px);
     font-weight: normal;
     margin-bottom: 4rem;
     padding: 10px;
@@ -239,18 +239,16 @@ h5{
 }
 
 @media (max-width:768px){
-    
-    .homelogo{
-        width: 12rem;
-        height: 10rem;
-        margin-bottom: 0;        
+   
+    .hbox{
+        padding: 1rem;
     }
-    .jmun{
-        font-size: 1.2rem;
+    /* .jmun{
+        font-size: 1.5rem;
         margin-left: 5vw; 
         text-align: center;   
         margin-bottom: 10rem;
-    }
+    } */
     .navbarlogo{
         width:8rem;
         height: 5rem;

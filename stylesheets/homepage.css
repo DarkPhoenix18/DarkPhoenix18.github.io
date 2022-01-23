@@ -2,13 +2,13 @@
     background-color: rgb(240,240,240);
     min-height: 50rem;
     max-height: 100rem;
-    padding:2rem;
+    padding:1rem;
     height: max-content;
 }
 
 .letter-image{
-    width: 17rem;
-    height: 14rem;
+    max-width: 17rem;
+    max-height: 14rem;
     float: left;
     padding-right: 1rem;
     
@@ -26,10 +26,11 @@
     min-height: 20rem;    
 }
 
-@media (max-width:410px){
+/* @media (max-width:768px){
     .letter-image{
         width: 14rem;
         height: 10rem;
     }
-}
+    
+} */
 
