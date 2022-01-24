@@ -11,13 +11,44 @@
   <Header>
     <div class="logo">LOGO HERE</div>
     <input type="checkbox" id="nav-toggle" name="nav" class="nav-toggle">
+    
+    
+    
+
     <nav class="nav">
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
+        <li><a href="">Home</a></li>
+        <li class="drop"><a href="#">About</a>
+          <input type="checkbox" name="about" id="about-toggle" class="about-toggle">
+          <ul  class="about">
+            <li><a href="#">Seth.M.R.Jaipuria School</a></li>
+            <li><a href="#">Meet The Secretariat</a></li>
+            <li><a href="#">Conference Resources</a></li>
+          </ul>
+          <label for="about-toggle" class="about-label-toggle">V</label>
+        </li>
         <li><a href="#">Partners</a></li>
-        <li><a href="#">Committees</a></li>
-        <li><a href="#">Register</a></li>
+        <li class="drop"><a href="#">Register</a>
+          <input type="checkbox" name="register" id="register-toggle" class="register-toggle">
+          <ul class="register">
+            <li><a href="#">Delegate Registrations</a></li>
+            <li><a href="#">GPS Registrations</a></li>
+          </ul>
+          <label for="register-toggle" class="register-label-toggle">V</label>
+        </li>
+        <li class="drop"><a href="#">Committees</a>
+          <input type="checkbox" name="committee" id="committee-toggle" class="committee-toggle">
+          <ul class="committee">
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+            <li><a href="#">Link 4</a></li>
+            <li><a href="#">Link 5</a></li>
+            <li><a href="#">Link 6</a></li>
+            <li><a href="#">Link 7</a></li>
+          </ul>
+          <label for="committee-toggle" class="committee-label-toggle">V</label>
+        </li>
       </ul>
     </nav>
     <label for="nav-toggle" class="nav-label-toggle"><span></span><span></span><span></span></label>

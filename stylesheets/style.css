@@ -85,120 +85,162 @@ h5{
         background-attachment: fixed;
         z-index: -1;
         animation: transitionin 1s;
+        overflow: auto;
     }
-    .navbar{
-        
+    :root{
+        --nav-background:rgba(0,0,0,.2);
+    }
+    
+    header{
+        min-height: 10%;
+        max-height: 20%; ;
+        background-color: var(--nav-background);
+        position: fixed;
+        width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 20px 40px;
-        color: white;   
-        background-color: rgba(0, 0, 0,.2);
-        font-weight: normal;
-        font-size: 22px;
-    }
-    
-    .navbar ul{
-        display: flex;
-        list-style: none;
-    }
-    .navbar li{
-        padding: 10px;
         color: white;
     }
-    .dropdown{
+    
+    img{
+        margin: 10px;
+    }
+    
+    nav {
+        position: absolute;
+        background-color: var(--nav-background);
+        width: 100%;
+        top:100%;   
+        display: none;
+    }
+    
+    nav ul{
+        margin-left:10px;
+        list-style-type: none;
+    }
+    
+    nav li{
+        margin-bottom: 10px;
+        font-size: 18px;
+        text-transform: uppercase;
+        width: 100%;
+        padding: 5px;
         position: relative;
     }
     
-    .dropcontent{
-        display: none;
-        flex-direction: column;
-        opacity: 0;
-        transform: translate(-3em);
-        transition: all .3s ease 0s, visibility 0s linear .3s, z-index 0s linear .0;
-        position: absolute;
-    }
-    .dropdown:focus .dropcontent,
-    .dropdown:focus-within .dropcontent,
-    .dropdown:hover .dropcontent{
-        display: flex;
-        opacity: 1;
-        transform: translateY(0);
-        transition-delay: 0, 0, .3s ;
-    }
-    .dropcontent a{
-        padding: 10px;
-        background-color: rgb(15, 15, 15);
-        word-spacing: .5px;
-    }
-    .custom-nav-width1{
-        width: 12rem;
+    nav li a{
+        text-decoration: none;
+        color:white;
     }
     
-    .custom-nav-width2{
-        width:10rem;
-    }   
-    .navbarlogo{
-        background-image: url(../Images/jmun-logo-official.jpg);
-        width: 11rem;
-        height: 6rem;
-        background-size: cover;
-        margin-left: 10px;
-        cursor: pointer;
-    }
-    .toggle-button{
-        position: absolute;
-        top: 3rem;
-        right: 2rem;
-        display: none;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 30px;
-        height: 21px;
-    }
-    
-    .toggle-button .bar{
-        height: 3px;
-        width: 100%;
-        background-color: white;
+    nav li:hover{
+        background-color:rgba(250,250,250,.1);
         border-radius: 5px;
     }
-
-     
     
-    @media(max-width:1000px){
-            .toggle-button{
-                display: flex;
-            }
-            
-            .navbar{
-                background-color: rgba(0, 0, 0,.2);                
-                flex-direction: column; 
-                justify-content: left;               
-            }
-            .navbar ul{
-                display: none;
-                padding: 2rem 0;
-                flex-direction: column;
-                align-self: baseline;
-            }
+    .nav-toggle:checked ~ nav{
+        display: block;
+    }
     
-            .dropcontent{
-                position: static;
-            }
-            .dropdown{
-                transition: all ease-in-out 1s;
-            }
-            .navbarlogo{
-                align-self: baseline;
-            }
+    .nav-toggle{
+        display: none;
+    }
     
-            .navbar ul{
-                flex-direction: column;
-                justify-content:center;
-                align-items: center;
-            }  
-            
+    .logo{
+        font-size: large;
+        font-weight: 600;
+        margin-left: 10px;
+        background-image: url(../Images/jmun-logo-official.jpg);
+        background-size: cover;
+        width: 10rem;
+        height: 6rem;
+        margin: 10px;
+        left: 20px;
+    }
+    .nav-label-toggle{
+        margin-right: 10px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        width: 30px;
+    }
+    
+    
+    .nav-label-toggle span{
+        background-color: black;
+        height: 5px;
+        width: 100%;
+        margin: 2px 0;
+        border-radius: 5px;
+    }
+    
+    .about,.committee,.register{
+        position: relative;
+    }
+    
+    nav li ul{
+        margin-top: 10px;
+        display: none;
+    }
+    
+    .about-toggle:checked ~ .about,.committee-toggle:checked ~ .committee,
+    .register-toggle:checked ~ .register{
+        display: block;
+    }
+    
+    nav li input{
+        display: none;
+    }
+    
+    nav li label{
+        position: absolute;
+        right: 0;
+    }
+    
+    @media (min-width:768px){
+        .nav-label-toggle{
+            display: none;
+        }
+    
+        nav{
+          display: inline;
+          position: static;
+          width: auto;
+          background-color: transparent;
+        }
+    
+        nav ul{
+            display: flex;
+            margin-right: 3rem;
+        }
+    
+        nav li{
+            margin: 5px;
+            position: relative;
+        }
+        nav li label{
+            display: none;
+        }
+    
+        nav li ul{
+            display:none;
+            left: 0;
+        }
+        nav li ul li{
+            width:max-content;
+        }
+    
+        nav .drop:hover ul{
+            display: block;
+        }
+    
+        .about,.committee,.register{
+            position: absolute;
+            background-color: rgb(0,0,0,.2);
+        }
     }
 /* Banner Styling */
 
@@ -213,7 +255,7 @@ h5{
 .homelogo{
     max-width:16rem;
     max-height: 14rem;
-    margin-bottom: 5rem;
+    margin-top: 5rem;
 }
 
 .jmun{

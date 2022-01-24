@@ -22,39 +22,48 @@
 
     <div class="outcontainer">
 
-    <nav class="navbar">
-        <div class="navbarlogo"></div>
-        <ul class="nav-links">
-            <li><a href="./index.html">Home</a></li>
-            <div class="dropdown"><li>About</li>
-                <div class="dropcontent custom-nav-width1">
-                    <a href="./schoolinfo.html">The School</a>
-                    <a href="./secretariat.html">The Secretariat</a>
-                    <a href="#">Conference Resources</a>
-                </div>
-            </div>
-            <li><a href="./partners.html">Partners</a></li>
-            <div class="dropdown"><li>Committees</li>
-                <div class="dropcontent custom-nav-width2 ">
-                    <a href="./newpagetemplate.html">UNSC</a>
-                    <a href="#">UNGA</a>
-                    <a href="#">UNHRC</a>
-                    <a href="#">Crisis</a>
-                    <a href="#">Indian</a>
-                    <a href="#">GPS</a>
-                    <a href="#">Environmental</a>
-                    <a href="#">Beginners</a>
-                </div>  
-            </div>
-            
-            <div class="dropdown"><li>Register</li>
-                <div class="dropcontent custom-nav-width2 ">
-                    <a href="./Delegate Registrations.html">Delegate Registration</a>
-                    <a href="./GPS Registrations.html">GPS<br>Registration</a>
-            </div>
-        </ul>
-      
-    </nav>
+        <Header>
+            <div class="logo"></div>
+            <input type="checkbox" id="nav-toggle" name="nav" class="nav-toggle">                
+                <nav class="nav">
+              <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li class="drop"><a href="./schoolinfo.html">About</a>
+                  <input type="checkbox" name="about" id="about-toggle" class="about-toggle">
+                  <ul  class="about">
+                    <li><a href="./schoolinfo.html">Seth.M.R.Jaipuria School</a></li>
+                    <li><a href="./secretariat.html">Meet The Secretariat</a></li>
+                    <li><a href="#">Conference Resources</a></li>
+                  </ul>
+                  <label for="about-toggle" class="about-label-toggle">V</label>
+                </li>
+                <li><a href="./partners.html">Partners</a></li>
+                <li class="drop"><a href="./Delegate Registrations.html">Register</a>
+                  <input type="checkbox" name="register" id="register-toggle" class="register-toggle">
+                  <ul class="register">
+                    <li><a href="./Delegate Registrations.html">Delegate Registrations</a></li>
+                    <li><a href="./GPS Registrations.html">GPS Registrations</a></li>
+                  </ul>
+                  <label for="register-toggle" class="register-label-toggle">V</label>
+                </li>
+                <li class="drop"><a href="#">Committees</a>
+                  <input type="checkbox" name="committee" id="committee-toggle" class="committee-toggle">
+                  <ul class="committee">
+                    <li><a href="#">UNSC</a></li>
+                    <li><a href="#">UNGA</a></li>
+                    <li><a href="#">UNHRC</a></li>
+                    <li><a href="#">Crisis</a></li>
+                    <li><a href="#">Indian</a></li>
+                    <li><a href="#">GPSS</a></li>
+                    <li><a href="#">Environmental</a></li>
+                    <li><a href="#">Beginners</a></li>
+                  </ul>
+                  <label for="committee-toggle" class="committee-label-toggle">V</label>
+                </li>
+              </ul>
+            </nav>
+            <label for="nav-toggle" class="nav-label-toggle"><span></span><span></span><span></span></label>
+          </Header>
 
 <!-- this section has code for all the matter below the navbar but above the footer -->
     
