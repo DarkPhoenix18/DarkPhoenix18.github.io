@@ -216,10 +216,11 @@ h5{
 
 .jmun{
     color: white;
-    font-size: clamp(12px, 26px, 32px);
+    font-size: calc(1.5vw + .5rem);
     font-weight: normal;
     margin-bottom: 4rem;
     padding: 10px;
+    font-weight: bold;
 }
 
 .para{
@@ -242,13 +243,9 @@ h5{
    
     .hbox{
         padding: 1rem;
+        justify-content: center;
     }
-    /* .jmun{
-        font-size: 1.5rem;
-        margin-left: 5vw; 
-        text-align: center;   
-        margin-bottom: 10rem;
-    } */
+    
     .navbarlogo{
         width:8rem;
         height: 5rem;
@@ -258,6 +255,51 @@ h5{
         padding: 10px;
     }
 }
+
+/* --------------------------------------Countdown----------------------------------------------- */
+.countdown{
+    width: max-content;
+    height: fit-content;
+}
+.countdown ul{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.countdown li {
+    font-size:24px;
+    list-style-type: none;
+    padding: 10px;
+    text-transform: uppercase;   
+}
+
+.countdown li:first-child{
+    padding-left: 0;
+}
+
+.countdown li span {
+    display: block;
+    font-size: calc(1.5vw + .5rem);
+}
+@media all and (max-width: 768px) {
+    body{
+        overflow:auto;
+    }
+
+    .countdown li {
+        font-size: calc(1.125rem * var(--smaller));
+        padding: 8px;
+    }
+    
+    .countdown li span {
+        font-size: calc(3.375rem * var(--smaller));
+    }
+}
+/* ---------------------------------END--------------------------------------------------------------- */
+
+
 /* ----------------------------------------------------Footer Styling--------------------------------------------------------- */
 footer{
     max-height: 30rem;
@@ -388,40 +430,3 @@ footer{
 
 
 
-/* --------------------------------------Countdown----------------------------------------------- */
-.countdown{
-    width: max-content;
-    height: fit-content;
-}
-.countdown ul{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-}
-.countdown li {
-    font-size: 28px;
-    list-style-type: none;
-    padding: 1em;
-    text-transform: uppercase;
-    
-}
-
-.countdown li span {
-    display: block;
-    font-size: 2.5rem;
-}
-@media all and (max-width: 768px) {
-    body{
-        overflow:auto;
-    }
-
-    .countdown li {
-        font-size: calc(1.125rem * var(--smaller));
-        padding: 8px;
-    }
-    
-    .countdown li span {
-        font-size: calc(3.375rem * var(--smaller));
-    }
-}
