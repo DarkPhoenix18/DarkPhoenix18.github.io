@@ -80,7 +80,7 @@ h5{
     body{
         min-height: 100%;
         /* background-image: url(https://i.gifer.com/Cal.gif); */
-        background-image: url(../Images/the-blowup-K6fYXynxZYY-unsplash.jpg);
+        background-image: url(../Images/the-blowup-K6fYXynxZYY-unsplash.jpg);   
         background-size: cover;
         background-attachment: fixed;
         z-index: -1;
@@ -170,7 +170,7 @@ h5{
     
     
     .nav-label-toggle span{
-        background-color: black;
+        background-color: white;
         height: 5px;
         width: 100%;
         margin: 2px 0;
@@ -215,6 +215,7 @@ h5{
         nav ul{
             display: flex;
             margin-right: 3rem;
+            top:20px;
         }
     
         nav li{
@@ -266,8 +267,8 @@ h5{
     padding: 10px;
     font-weight: bold;
 }
-.container{
-    background-color: rgb(240,240,240);
+.letter-container{
+    background-color: rgba(255, 255, 255, 0.85);
     padding:2rem;
     height: max-content;
 }
@@ -321,7 +322,6 @@ h5{
     width:fit-content;
     font-size: 22px;
     font-weight: normal;
-    border: 2px solid red;
 }
 .navbar  a{
     text-decoration: none;
