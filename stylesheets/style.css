@@ -495,31 +495,11 @@ footer{
 .credits{
     text-align: center;
 }
-/* -------------------------------------Register Button------------------------------------------- */
-.register-btn{
-    background-color: transparent;
-    padding: 10px;
-    border: 1px solid white;
-    font-size: 16px;
-    font-weight: normal;
-    transition:ease-in-out .1s;
-    border-radius: 2px;
+
+
+
+
+
+.regForm{
+    align-self: center;
 }
-.register-btn a{
-    color: white;
-    text-decoration:none;
-}
-
-.register-btn:hover{
-    background-color:white;
-    transform: translate(2px,-2px);
-}
-
-.register-btn:hover a{
-    color: black;
-}
-
-
-
-
-
