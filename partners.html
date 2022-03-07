@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cabin:ital@1&family=Fira+Sans&family=Mochiy+Pop+P+One&family=Ubuntu+Mono:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../stylesheets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
 <style>
 
@@ -47,37 +48,37 @@ h1{
             <nav class="nav">
           <ul>
             <li><a href="./index.html">Home</a></li>
-            <li class="drop"><a href="./schoolinfo.html">About</a>
+            <li class="drop"><a>About</a>
               <input type="checkbox" name="about" id="about-toggle" class="about-toggle">
+              <label for="about-toggle" class="about-label-toggle"><i class="fas fa-angle-down"></i></label>
               <ul  class="about">
                 <li><a href="./schoolinfo.html">Seth.M.R.Jaipuria School</a></li>
                 <li><a href="./secretariat.html">Meet The Secretariat</a></li>
-                <li><a href="#">Conference Resources</a></li>
-              </ul>
-              <label for="about-toggle" class="about-label-toggle">V</label>
+                <li><a href="./resources.html">Conference Resources</a></li>
+              </ul>                  
             </li>
             <li><a href="./partners.html">Partners</a></li>
-            <li class="drop"><a href="./Delegate Registrations.html">Register</a>
+            <li class="drop"><a>Register</a>
               <input type="checkbox" name="register" id="register-toggle" class="register-toggle">
+              <label for="register-toggle" class="register-label-toggle"><i class="fas fa-angle-down" id="register"></i></label>
               <ul class="register">
                 <li><a href="./Delegate Registrations.html">Delegate Registrations</a></li>
                 <li><a href="./GPS Registrations.html">GPS Registrations</a></li>
-              </ul>
-              <label for="register-toggle" class="register-label-toggle">V</label>
+              </ul> 
             </li>
-            <li class="drop"><a href="#">Committees</a>
+            <li class="drop"><a>Committees</a>
               <input type="checkbox" name="committee" id="committee-toggle" class="committee-toggle">
+              <label for="committee-toggle" class="committee-label-toggle"><i class="fas fa-angle-down"></i></label>
               <ul class="committee">
                 <li><a href="#">UNSC</a></li>
                 <li><a href="#">UNGA</a></li>
                 <li><a href="#">UNHRC</a></li>
-                <li><a href="#">Crisis</a></li>
+                <li><a href="#">GDS</a></li>
                 <li><a href="#">Indian</a></li>
-                <li><a href="#">GPSS</a></li>
+                <li><a href="#">GPS</a></li>
                 <li><a href="#">Environmental</a></li>
                 <li><a href="#">Beginners</a></li>
-              </ul>
-              <label for="committee-toggle" class="committee-label-toggle">V</label>
+              </ul>                  
             </li>
           </ul>
         </nav>
@@ -85,10 +86,15 @@ h1{
       </Header>
     </div>
     <div class="hbox">
-        <div class="jmun">Jaipuria Model United Nations <br>
-            Delibrate. Defend. Deliver.                
-            </div>
-            <img src="../Images/whitelogo.png" alt="" class="homelogo">
+        <div class="jmun"><p id="pageTitle">Jaipuria Model United Nations</p>
+            <h3>Partners</h3>
+        </div>
+        <div>
+        <img src="../Images/whitelogo.png" alt="" class="homelogo">
+        <div class="container2" style="margin-top: 0px;">
+            <p><span class="typed-text"></span><span class="cursor typing">&nbsp;</span></p>
+        </div>  
+        </div>
     </div>
     <div class="gallery"></div>
     <div class="sponsor" >
@@ -146,7 +152,7 @@ h1{
             <p class="footlink">
                 <a href="./Delegate Registrations.html">Delegate Registration</a><br>
                 <a href="./GPS Registrations.html">GPS Registration</a><br>
-                <a href="./conference_resources.html">Conference Resources</a>
+                <a href="./resources.html">Conference Resources</a>
             </p>        
             </div>
             <div class="col">
@@ -157,6 +163,6 @@ h1{
         </div>
         <div class="credits">Prajval & Vishwesh &copy; 2022</div>
     </footer>
-    
+    <script src="../javascript/general.js"></script> 
 </body>
 </html>
