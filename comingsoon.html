@@ -24,8 +24,9 @@
         background-position: center;
         background-size: cover;
         background-attachment: fixed;
-        animation: transitionin 1s;
         overflow: hidden;
+        opacity: 0;
+        transition: opacity 2s;
     } 
         body{
             background-image: url(../Images/secretariat19.png);
@@ -119,7 +120,7 @@
 }
     </style>
 </head>
-<body>
+<body onload="document.body.style.opacity='1'">
     <div class="icon-bar">
         <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
         <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
