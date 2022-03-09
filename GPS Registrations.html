@@ -3,13 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=3.0">
     <title>Home | JMUN'22</title>
     <link rel="stylesheet" href="../stylesheets/style.css">
+    <link rel="stylesheet" href="../stylesheets/forms.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-</head>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+      body{
+        background-image:url(../Images/putinazi.png);
+            background-size:cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+      }
+      #rad{
+        width:max-content;
+        height: max-content;
+      }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $('input[type="radio"]').click(function(){
+            var inputValue = $(this).attr("value");
+            var targetBox = $("." + inputValue);
+            $(".box").not(targetBox).hide();
+            $(targetBox).show();
+        });
+    });
+    </script>
+  </head>
 <body>
+  <div class="bg-image"></div>
   <Header>
     <div class="logo"></div>
     <input type="checkbox" id="nav-toggle" name="nav" class="nav-toggle">                
@@ -63,8 +89,149 @@
     </div>  
     </div>
 </div>
-         <div class="gallery"></div>
-         <p style="text-align: center;"><iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdzIhL3pDFb-ETXhFxSS9dwTs3x_CRqfF-WkHZMjJD9rERcoQ/viewform?embedded=true" width="900" height="1600" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe></p>
+<div class="letter-container">
+  <h2>Note:</h2>
+  <div class="home-letter" style="padding-top: 3vh; padding-bottom: 4vh;">
+  <p style="font-weight: 500;">
+    1. Applicants first have to submit this form to begin their registration, but acceptance to the Global Press Summit is based entirely on the application. This year the conference will include reporters and caricaturists.<br><br>
+    2. A link to the specific application forms has been provided in the next section.<br><br>
+    3. The format of the application needs to be 12 pt, Times New Roman, Justified Alignment.<br><br>
+    4. Contact Details: <br>
+         <p style="text-indent: 15px;">i. Global Press Summit:  <a href="mailto:gpsjmun2021@gmail.com">gpsjmun2021@gmail.com</a> <br></p>
+        <p style="text-indent: 15px;">ii. Delegate Affairs: <a href="mailto:delegateaffairsjmun@gmail.com">delegateaffairsjmun@gmail.com</a></p>
+  </p>
+  </div>
+</div>
+  <form method="post" name="google-sheet"
+    style="background-color: rgba(0, 0, 0, 0.678);">
+    <h2 style="color: white; border-bottom: 1px solid white;">Registation Form</h2>
+    <div class="form-container">
+      <div class="f1">
+        <div class="form">
+          <input type="text" id="fname" name="fname" required>    
+          <label for="fname" class="label-name">
+            <span class="content-name">Name:</span>
+          </label>
+        </div>
+        <br><br>
+
+       <div class="form">
+        <input type="email" id="email" name="email" required>
+        <label for="email" class="label-name">
+          <span class="content-name">E-Mail Address:</span>
+        </label>
+       </div>
+       <br><br>
+
+
+        <div class="form">
+          <input type="text" id="phone" name="phone" required>
+          <label for="phone" class="label-name">
+            <span class="content-name">Phone:</span>
+          </label>
+        </div>
+        <br><br>
+
+        <div class="form">
+          <label for="class"  id="drop"></label>
+          <select id="class" name="class" required>
+            <option value="" selected disabled hidden>Class:</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+          </select>
+        </div><br><br>
+
+
+        <div class="form">
+          <input type="text" name="school" id="school" required>
+          <label for="school" class="label-name">
+            <span class="content-name">School:</span>
+          </label>
+        </div><br><br>
+
+
+      </div>
+
+      <div class="f2">
+         <div class="form">
+          <textarea name="exp" id="exp" cols="30" rows="1" required></textarea>
+          <label for="exp" class="label-name">
+            <span class="content-name">Previous MUN Experience:</span>
+          </label>
+        </div><br><br>
+
+
+        <div class="form" id="radios">
+          <div><p>In what capacity would you like to join the GPS?</p></div>
+        </div><br><br>
+
+    <div class="form" id="radios">
+      <label for="cari/repo" class="rads" id="drop">Reporter
+      <input name="cari/repo" type="radio" value="Reporter">
+      <span class="checkmark"></span>
+      </label>
+      <label for="cari/repo" class="rads" id="drop">Caricaturist
+      <input name="cari/repo" type="radio" value="Caricaturist">
+      <span class="checkmark"></span>
+      </label>
+      <br>
+      <label></label>
+    </div><br><br>
+
+    <div class="form">
+      <textarea name="misc" id="misc" cols="30" rows="1" required></textarea>
+      <label for="misc" class="label-name">
+        <span class="content-name">Anything else you'd like us to know?</span>
+      </label>
+      </div><br><br>
+
+    <div class="form">
+      <label style="border: none; font-size: 18px;">*Read the Instructions given below to complete your application.</label>
+    </div><br><br>
+    
+    
+
+    <div class="butt">
+      <input class="button" type="submit" value="Submit">
+      </div>
+    </div>
+    </div>
+
+    
+  </form>
+  
+  <div class="letter-container">
+    <div class="Caricaturist box" style="padding-top: 3vh; padding-bottom: 4vh;">
+      <h2>Complete your Application: Caricaturist</h2>
+    <p style="font-size: 1.5em;">
+      <br>
+      <br>
+      For being accepted as a caricaturist to the Jaipuria Model United Nations 2021, follow the provided link to get the application: <br><br>
+
+        <a href="https://docs.google.com/document/d/1xEpBDRIsOmp8g4QCUMePlipRmC3ani_YvOcOFUCgn4U/edit?usp=sharing" target="_blank">Link to the application.</a><br><br>
+
+        It is required that you fill this application and mail it to <a href="mailto:gpsjmun2021@gmail.com">gpsjmun2021@gmail.com</a> within a week of submitting the registration form
+    </p>
+    </div>
+    <div class="Reporter box" style="padding-top: 3vh; padding-bottom: 4vh;">
+      <h2>Complete your Application: Reporter</h2>
+      <p style="font-size: 1.5em;">
+        <br>
+        <br>
+        For being accepted as a reporter to the Jaipuria Model United Nations 2021, follow the provided link to get the application: <br><br>
+
+        <a href="https://docs.google.com/document/d/1SvXkJv1IhPhRpWnBU8YfwAQ4miMMkhT4iwJk4W1HJ6E/edit?usp=sharing" target="_blank">Link to the application.</a><br><br>
+
+        It is required that you fill this application and mail it to <a href="mailto:gpsjmun2021@gmail.com">gpsjmun2021@gmail.com</a> within a week of submitting the registration form
+      </p>
+      </div>
+  </div>
+
+
+
 <footer>
     <div class="ftinfo">
          <div class="col"><div class="footer-heading"><h5>Important Information:</h5></div><br>
@@ -76,7 +243,7 @@
         </div> 
         <div class="col"><div class="footer-heading"><h5>Contact Us:</h5></div><br>
         <p>
-            Email: <a href="thejmun@gmail.com">thejmun@gmail.com</a><br>
+            Email: <a href="mailto:thejmun@gmail.com" target="_blank">thejmun@gmail.com</a><br>
             Phone: +91 80XXXXXX18<br>
         </p>
         <div class="wrapper">
@@ -104,7 +271,7 @@
         <p class="footlink">
             <a href="./Delegate Registrations.html">Delegate Registration</a><br>
             <a href="./GPS Registrations.html">GPS Registration</a><br>
-            <a href="./conference_resources.html">Conference Resources</a>
+            <a href="./resources.html">Conference Resources</a>
         </p>        
         </div>
         <div class="col">
@@ -116,5 +283,19 @@
     <div class="credits">Prajval & Vishwesh &copy; 2022</div>
 </footer>
 <script src="../javascript/general.js"></script>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxhnuEgOCvPwjecO2BH3Z-z8Q550UjEQpyzPQ25FGsxKewwz4UlIEV-s48J0wPhrJ_Vdw/exec'
+  const form = document.forms['google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => alert("Thank You for registering. We'll contact you soon via E-mail!"))
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </body>
 </html>
