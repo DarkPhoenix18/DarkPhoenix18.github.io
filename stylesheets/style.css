@@ -88,7 +88,7 @@ h5{
         overflow: auto;
     }
     :root{
-        --nav-background:rgba(0,0,0,.2);
+        --nav-background:rgba(0,0,0,.6);
     }
     
     header{
@@ -124,7 +124,7 @@ h5{
         margin-bottom: 10px;
         font-size: 18px;
         text-transform: uppercase;
-        width: 100%;
+        width: 90%;
         padding: 5px;
         position: relative;
     }
@@ -248,28 +248,69 @@ h5{
 
 .hbox {
     display: flex;
-    justify-content:space-evenly;
+    justify-content: space-around;
     align-items: center;
-    height: 100vh;
+    height: 85vh;
     flex-wrap: wrap-reverse;
 }
 .homelogo{
     max-width:16rem;
     max-height: 14rem;
-    margin-top: 5rem;
+    margin-bottom: 0;
 }
 
 .jmun{
     color: white;
     font-size: calc(1.5vw + .5rem);
     font-weight: normal;
-    margin-bottom: 4rem;
     padding: 10px;
     font-weight: bold;
 }
+
+.container2 {
+    max-height: fit-content;
+    padding-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:10px;
+}
+  .container2 p {
+    font-size: calc(1.5vw + .5rem);
+    font-weight: normal;
+    padding: 0px;
+    font-weight: bold;
+    overflow: hidden;
+  }
+  .container2 p span.typed-text {
+    color: white;
+  }
+  
+  .container2 p span.cursor.typing {
+    animation: none;
+  }
+
+  .home-letter{
+      padding-left: 18vh;
+      padding-right: 18vh;
+      padding-top: 6vh;
+  }
+  .home-letter p{
+    text-align: justify;
+    font-size: 1.5em;
+  }
+  .sign{
+      display: flex;
+      flex-direction: column;
+      justify-content: right;
+      align-items: flex-end;
+  }
+.sign img{
+     max-width: 200px;
+ }
 .letter-container{
-    background-color: rgba(255, 255, 255, 0.85);
-    padding:2rem;
+    background-color: rgb(255, 255, 255);
+    padding: 1em;
     height: max-content;
 }
 
@@ -327,14 +368,25 @@ h5{
     text-decoration: none;
     color:white;
 }
-
-.jmun p{
-    margin-left: 10px;
-    width: max-content;
+#pageTitle{
+    text-align: center;
 }
-
+.jmun p{
+    align-content: center;
+}
+.countdown{align-self: center;}
 @media (max-width:768px){
-   
+    .jmun{
+        font-size: calc(1.5vw + 1rem);;
+    }
+    .container2 p{
+        font-size: calc(1.5vw + 1rem);
+    }
+    .home-letter{
+        padding-left: 3vh;
+        padding-right: 3vh;
+        padding-top: 6vh;
+    }
     .hbox{
         padding: 1rem;
         justify-content: center;
@@ -354,6 +406,7 @@ h5{
 .countdown{
     width: max-content;
     height: fit-content;
+    text-align: center;
 }
 .countdown ul{
     margin-top: 10px;
@@ -363,15 +416,12 @@ h5{
     flex-wrap: wrap;
 }
 .countdown li {
-    font-size:24px;
+    font-size:calc(1.5vw + 0.5rem);
     list-style-type: none;
     padding: 10px;
     text-transform: uppercase;   
 }
 
-.countdown li:first-child{
-    padding-left: 0;
-}
 
 .countdown li span {
     display: block;
@@ -474,7 +524,7 @@ footer{
     color: #fff;
 }
 .wrapper .button span{
-    font-size: 18px;
+    font-size: 17px;
     color: black;
     font-weight: 500;
     line-height: 30px;
@@ -496,30 +546,6 @@ footer{
 .credits{
     text-align: center;
 }
-/* -------------------------------------Register Button------------------------------------------- */
-.register-btn{
-    background-color: transparent;
-    padding: 10px;
-    border: 1px solid white;
-    font-size: 16px;
-    font-weight: normal;
-    transition:ease-in-out .1s;
-    border-radius: 2px;
-}
-.register-btn a{
-    color: white;
-    text-decoration:none;
-}
-
-.register-btn:hover{
-    background-color:white;
-    transform: translate(2px,-2px);
-}
-
-.register-btn:hover a{
-    color: black;
-}
-
 
 
 

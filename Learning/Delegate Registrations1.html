@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=3.0">
+    <title>Home | JMUN'22</title>
+    <link rel="stylesheet" href="../stylesheets/style.css">
+    <link rel="stylesheet" href="../Learning/forms1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+      body{
+        background-image:url(../Images/Bhaskar.png);
+            background-size:cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+      }
+    </style>
+  </head>
+<body>
+  <Header>
+    <div class="logo"></div>
+    <input type="checkbox" id="nav-toggle" name="nav" class="nav-toggle">                
+        <nav class="nav">
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li class="drop"><a>About</a>
+          <input type="checkbox" name="about" id="about-toggle" class="about-toggle">
+          <label for="about-toggle" class="about-label-toggle"><i class="fas fa-angle-down"></i></label>
+          <ul  class="about">
+            <li><a href="./schoolinfo.html">Seth.M.R.Jaipuria School</a></li>
+            <li><a href="./secretariat.html">Meet The Secretariat</a></li>
+            <li><a href="./resources.html">Conference Resources</a></li>
+          </ul>                  
+        </li>
+        <li><a href="./partners.html">Partners</a></li>
+        <li class="drop"><a>Register</a>
+          <input type="checkbox" name="register" id="register-toggle" class="register-toggle">
+          <label for="register-toggle" class="register-label-toggle"><i class="fas fa-angle-down" id="register"></i></label>
+          <ul class="register">
+            <li><a href="./Delegate Registrations.html">Delegate Registrations</a></li>
+            <li><a href="./GPS Registrations.html">GPS Registrations</a></li>
+          </ul> 
+        </li>
+        <li class="drop"><a>Committees</a>
+          <input type="checkbox" name="committee" id="committee-toggle" class="committee-toggle">
+          <label for="committee-toggle" class="committee-label-toggle"><i class="fas fa-angle-down"></i></label>
+          <ul class="committee">
+            <li><a href="#">UNSC</a></li>
+            <li><a href="#">UNGA</a></li>
+            <li><a href="#">UNHRC</a></li>
+            <li><a href="#">GDS</a></li>
+            <li><a href="#">Indian</a></li>
+            <li><a href="#">GPS</a></li>
+            <li><a href="#">Environmental</a></li>
+            <li><a href="#">Beginners</a></li>
+          </ul>                  
+        </li>
+      </ul>
+    </nav>
+    <label for="nav-toggle" class="nav-label-toggle"><span></span><span></span><span></span></label>
+  </Header>
+  <div class="hbox">
+    <div class="jmun"><p id="pageTitle">Jaipuria Model United Nations</p>
+        <h3>Delegate Registrations</h3>
+    </div>
+    <div>
+    <img src="../Images/whitelogo.png" alt="" class="homelogo">
+    <div class="container2" style="margin-top: 0px;">
+        <p><span class="typed-text"></span><span class="cursor typing">&nbsp;</span></p>
+    </div>  
+    </div>
+</div>
+<div class="letter-container">
+  <h2>Note:</h2>
+  <div class="home-letter" style="padding-top: 3vh; padding-bottom: 4vh;">
+  <p style="font-weight: 500;">
+    1. Applicants first have to submit this form to begin their registration, but acceptance to the Global Press Summit is based entirely on the application. This year the conference will include reporters and caricaturists.<br><br>
+    2. A link to the specific application forms has been provided in the next section.<br><br>
+    3. The format of the application needs to be 12 pt, Times New Roman, Justified Alignment.<br><br>
+    4. Contact Details: <br>
+         <p style="text-indent: 15px;">i. Global Press Summit:  <a href="mailto:gpsjmun2021@gmail.com">gpsjmun2021@gmail.com</a> <br></p>
+        <p style="text-indent: 15px;">ii. Delegate Affairs: <a href="mailto:delegateaffairsjmun@gmail.com">delegateaffairsjmun@gmail.com</a></p>
+  </p>
+  </div>
+</div>  
+<form method="post" name="google-sheet"
+    style="background-color: rgba(0, 0, 0, 0.678);">
+    <h2 style="color: white; border-bottom: 1px solid white;">Registation Form</h2>
+    <div class="form-container">
+      <div class="f1">
+        <div class="form">
+          <input type="text" id="fname" name="fname" required>    
+          <label for="fname" class="label-name">
+            <span class="content-name">Name:</span>
+          </label>
+        </div>
+        <br><br>
+
+       <div class="form">
+        <input type="email" id="email" name="email" required>
+        <label for="email" class="label-name">
+          <span class="content-name">E-Mail Address:</span>
+        </label>
+       </div>
+       <br><br>
+
+
+        <div class="form">
+          <input type="text" id="phone" name="phone" required>
+          <label for="phone" class="label-name">
+            <span class="content-name">Phone:</span>
+          </label>
+        </div>
+        <br><br>
+
+        <div class="form">
+          <label for="class"  id="drop"></label>
+          <select id="class" name="class" required>
+            <option value="" selected disabled hidden>Class:</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+          </select>
+        </div><br><br>
+
+
+        <div class="form">
+          <input type="text" name="school" id="school" required>
+          <label for="school" class="label-name">
+            <span class="content-name">School:</span>
+          </label>
+        </div><br><br>
+
+
+      </div>
+
+      <div class="f2">
+         <div class="form">
+          <input type="text" name="exp" id="exp" required></input>
+          <label for="exp" class="label-name">
+            <span class="content-name">Previous MUN Experience:</span>
+          </label>
+        </div><br><br>
+
+    <div class="form">
+        <label for="compref1"  id="drop"></label>
+    <select name="compref1" id="compref1" required>
+      <option value="" selected disabled hidden>Committee Preference 1</option>
+      <option value="Com1">Com1</option>
+      <option value="Com2">Com2</option>
+      <option value="Com3">Com3</option>
+      <option value="Com4">Com4</option>
+      <option value="Com5">Com5</option>
+      <option value="Com6">Com6</option>
+      <option value="Com7">Com7</option>
+      <option value="Com8">Com8</option>
+    </select>
+    </div><br><br>
+
+    <div class="form">
+    <label for="compref2"  id="drop"></label>
+    <select name="compref2" id="compref2" required>
+      <option value="" selected disabled hidden>Committee Preference 2</option>
+      <option value="Com1">Com1</option>
+      <option value="Com2">Com2</option>
+      <option value="Com3">Com3</option>
+      <option value="Com4">Com4</option>
+      <option value="Com5">Com5</option>
+      <option value="Com6">Com6</option>
+      <option value="Com7">Com7</option>
+      <option value="Com8">Com8</option>
+    </select>
+    </div><br><br>
+
+    <div class="form">
+    <label for="compref3" id="drop"></label>
+    <select name="compref3" id="compref3" required>
+      <option value="" selected disabled hidden>Committee Preference 3</option>
+      <option value="Com1">Com1</option>
+      <option value="Com2">Com2</option>
+      <option value="Com3">Com3</option>
+      <option value="Com4">Com4</option>
+      <option value="Com5">Com5</option>
+      <option value="Com6">Com6</option>
+      <option value="Com7">Com7</option>
+      <option value="Com8">Com8</option>
+    </select>
+    </div><br><br>
+    
+    <div class="form">
+    <input type="text" name="misc" id="misc" required></input>
+    <label for="misc" class="label-name">
+      <span class="content-name">Anything else?</span>
+    </label>
+    </div><br><br>
+
+    
+    </div>
+    <div class="butt">
+      <input class="button" type="submit" value="Submit">
+      </div>
+    </div>
+    
+  </form>
+  
+
+
+
+
+<footer>
+    <div class="ftinfo">
+         <div class="col"><div class="footer-heading"><h5>Important Information:</h5></div><br>
+        <p> 
+            Conference Dates:<br>
+            Registration Fees:<br>
+            Conference Platform: Zoom
+        </p>
+        </div> 
+        <div class="col"><div class="footer-heading"><h5>Contact Us:</h5></div><br>
+        <p>
+            Email: <a href="thejmun@gmail.com">thejmun@gmail.com</a><br>
+            Phone: +91 80XXXXXX18<br>
+        </p>
+        <div class="wrapper">
+            <a href="https://www.facebook.com/watch/TheJMUN/" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+            <div class="button">
+                <div class="icon"><i class="fab fa-facebook-f"></i></div>
+                <span>Facebook</span>
+            </div>
+        </a>
+        <a href="https://twitter.com/the_jmun" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+            <div class="button">
+                <div class="icon"><i class="fab fa-twitter"></i></div>
+                <span>Twitter</span>
+            </div>
+        </a>
+        <a href="https://www.instagram.com/jaipuriamun/?utm_medium=copy_link" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+            <div class="button">
+                <div class="icon"><i class="fab fa-instagram"></i></div>
+                <span>Instagram</span>
+            </div>
+        </a>
+        </div>  
+        </div>
+        <div class="col"><div class="footer-heading"><h5>Links:</h5></div><br>
+        <p class="footlink">
+            <a href="./Delegate Registrations.html">Delegate Registration</a><br>
+            <a href="./GPS Registrations.html">GPS Registration</a><br>
+            <a href="./resources.html">Conference Resources</a>
+        </p>        
+        </div>
+        <div class="col">
+            <div class="footer-heading"><h5>Our Partners</h5></div><br>
+            <img src="" alt="">
+
+        </div>
+    </div>
+    <div class="credits">Prajval & Vishwesh &copy; 2022</div>
+</footer>
+<script src="../javascript/general.js"></script>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxg09MygqBjth_BAG39kBSOI4cRHUu1W8lFgPv-UZpcij-6KC6791SwdfAGrpUSHS1V5w/exec'
+  const form = document.forms['google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => alert("Thank You for registering. We'll contact you soon via E-mail!"))
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</body>
+</html>
