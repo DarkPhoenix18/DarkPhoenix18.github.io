@@ -112,7 +112,9 @@ h5{
         background-color: var(--nav-background);
         width: 100%;
         top:100%;   
-        display: none;
+        transform: scale(1,0);
+        transform-origin: top;
+        transition: transform 200ms ease-in-out;
     }
     
     nav ul{
@@ -132,6 +134,8 @@ h5{
     nav li a{
         text-decoration: none;
         color:white;
+        opacity: 0;
+        transition: opacity 50ms ease-in-out;
     }
     
     nav li:hover{
@@ -140,9 +144,14 @@ h5{
     }
     
     .nav-toggle:checked ~ nav{
-        display: block;
+        transform: scale(1,1);
     }
     
+    .nav-toggle:checked ~ nav a,.about-label-toggle:checked ~ i, .register-label-toggle:checked ~ i, .committee-label-toggle:checked ~ i{
+        opacity: 1;
+        transition: opacity 250ms ease-in-out 250ms;
+    }
+
     .nav-toggle{
         display: none;
     }
@@ -179,6 +188,11 @@ h5{
     
     .about,.committee,.register{
         position: relative;
+        transform: scale(0,0);
+        transform-origin: top;
+        transition: transform 200ms ease-in-out;
+        height: 0;
+        width: 0;
     }
     
     nav li ul{
@@ -188,7 +202,19 @@ h5{
     
     .about-toggle:checked ~ .about,.committee-toggle:checked ~ .committee,
     .register-toggle:checked ~ .register{
-        display: block;
+        transform: scale(1,1);
+        width: max-content;
+        height: max-content;
+    }
+
+    .about-toggle:checked ~ .about a,.committee-toggle:checked ~ .committee a,
+    .register-toggle:checked ~ .register a{
+        opacity: 1;
+        transition: opacity 250ms ease-in-out 250ms;
+    }
+
+    .about-label-toggle, .register-label-toggle, .committee-label-toggle{
+        left: 95%;
     }
     
     nav li input{
@@ -206,10 +232,11 @@ h5{
         }
     
         nav{
+            all: unset;
           display: inline;
-          position: static;
           width: auto;
           background-color: transparent;
+          position: relative;
         }
     
         nav ul{
@@ -222,12 +249,17 @@ h5{
             margin: 5px;
             position: relative;
         }
+        nav li a{
+            opacity: 1;
+        }
         nav li label{
             display: none;
         }
     
         nav li ul{
-            display:none;
+            all: unset;
+            position: absolute;
+            display:block;
             left: 0;
         }
         nav li ul li{
@@ -239,6 +271,10 @@ h5{
         }
     
         .about,.committee,.register{
+            all: unset;
+            display: none;
+            width: max-content;
+            height: max-content;
             position: absolute;
             background-color: rgb(0,0,0,.2);
         }
