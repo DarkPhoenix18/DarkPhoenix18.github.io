@@ -12,38 +12,39 @@
     <script src="https://kit.fontawesome.com/3d69c177d5.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <section class="SPM">
   <Header>
     <div class="logo"></div>
     <input type="checkbox" id="nav-toggle" name="nav" class="nav-toggle">                
         <nav class="nav">
       <ul>
-        <li><a href="./index.html">Home</a></li>
-        <li class="drop"><a href="./schoolinfo.html">About</a>
+        <li><a href="../index.html">Home</a></li>
+        <li class="drop"><a href="../schoolinfo.html">About</a>
           <input type="checkbox" name="about" id="about-toggle" class="about-toggle">
           <label for="about-toggle" class="about-label-toggle"><i class="fa-solid fa-angle-down"></i></label>
           <ul  class="about">
-            <li><a href="./schoolinfo.html">Seth.M.R.Jaipuria School</a></li>
-            <li><a href="./secretariat.html">Meet The Secretariat</a></li>
+            <li><a href="../schoolinfo.html">Seth.M.R.Jaipuria School</a></li>
+            <li><a href="../secretariat.html">Meet The Secretariat</a></li>
             <li><a href="#">Conference Resources</a></li>
           </ul>
           
         </li>
-        <li><a href="./partners.html">Partners</a></li>
-        <li class="drop"><a href="./Delegate Registrations.html">Register</a>
+        <li><a href="../partners.html">Partners</a></li>
+        <li class="drop"><a href="../Delegate Registrations.html">Register</a>
           <input type="checkbox" name="register" id="register-toggle" class="register-toggle">
           <label for="register-toggle" class="register-label-toggle"><i class="fa-solid fa-angle-down"></i></label>
           <ul class="register">
-            <li><a href="./Delegate Registrations.html">Delegate Registrations</a></li>
-            <li><a href="./GPS Registrations.html">GPS Registrations</a></li>
+            <li><a href="../Delegate Registrations.html">Delegate Registrations</a></li>
+            <li><a href="../GPS Registrations.html">GPS Registrations</a></li>
           </ul>
         </li>
         <li class="drop"><a href="#">Committees</a>
           <input type="checkbox" name="committee" id="committee-toggle" class="committee-toggle">
           <label for="committee-toggle" class="committee-label-toggle"><i class="fa-solid fa-angle-down"></i></label>
           <ul class="committee">
-            <li><a href="#">UNSC</a></li>
-            <li><a href="#">UNGA</a></li>
-            <li><a href="#">UNHRC</a></li>
+            <li><a href="UNSC.html">UNSC</a></li>
+            <li><a href="UNGA.html">UNGA</a></li>
+            <li><a href="./UNHRC.html">UNHRC</a></li>
             <li><a href="#">Crisis</a></li>
             <li><a href="#">Indian</a></li>
             <li><a href="#">GPSS</a></li>
@@ -56,15 +57,21 @@
     <label for="nav-toggle" class="nav-label-toggle"><span></span><span></span><span></span></label>
   </Header>
     <div class="hbox">
-        <div class="jmun">Jaipuria Model United Nations <br>               
+        <div class="jmun">United Nations Security Council<br>               
             </div>
             <img src="../Images/whitelogo.png" alt="" class="homelogo">
             <div class="container2" style="margin-top: 0px;">
               <p><span class="typed-text"></span><span class="cursor typing">&nbsp;</span></p>
           </div>  
-        </div>
-         <div class="gallery"></div>
+    </div>
 
+    <section class="committeeinfo">
+        <h1>United Nations Security Council</h1>
+        <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis incidunt eaque aliquid cumque placeat nemo, neque quidem harum veniam nihil quo excepturi odit aliquam expedita asperiores eveniet unde laborum perferendis!</article>
+        <button><a href="#" target="_blank">Background Guide</a></div></button>
+        <button><a href="#" target="_blank">Conference Resources</a></div></button>
+    </section>
+    </section>
 <footer>
     <div class="ftinfo">
          <div class="col"><div class="footer-heading"><h5>Important Information:</h5></div><br>
@@ -117,4 +124,88 @@
 </footer>
 <script src="../javascript/general.js"></script>
 </body>
+<style>
+    body{
+
+        background-image: url(../Images/UNSC_BG.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: fixed;
+    }
+    .SPM{
+        background-color: rgba(0, 0, 0, .5);
+        height: 100%;
+    }
+    .hbox{
+        display: flex ;
+        justify-content: center;
+        align-items: center;
+    }
+    .homelogo{
+        margin: auto 2em auto 2em;
+    }
+    .jmun{
+        text-transform: uppercase;
+        font-weight: 600;
+        margin: auto 2em auto 2em;
+    }
+
+    .committeeinfo{
+        height: max-content;
+        background-color: rgb(250, 250, 250,.9);
+        padding: 2rem;
+        font-size:1rem;
+        text-align: center;
+    }
+    .committeeinfo h1{
+        border-bottom: 2px solid rgba(0, 0, 0, .5);
+        font-size: 2em;
+        font-weight: bold;
+        color: rgba(0, 0, 0, .8);
+    }
+    article{
+        font-size:1.5em;
+        font-weight: 500;
+        margin: 2%;
+    }
+
+    button{
+        font-size: 1.5em;
+        border: 2px solid black;
+        cursor: pointer;
+        padding: .5em;
+        transition: .2s ease-in;
+        position: relative;
+        margin: .5em;
+        z-index: 1;
+        overflow: hidden;
+    }
+
+    .committeeinfo a{
+        text-decoration: none;
+        color: black;
+        margin: .5em;
+        transition: all .5s linear;
+    }
+
+    .committeeinfo a::before{
+        content: "";
+        /* border: 2px solid black; */
+        transform: translate(-100%);
+        background-color: black;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: all .5s linear;
+        z-index: -1;
+    }
+    .committeeinfo button:hover a{
+        color: white;
+    }
+    .committeeinfo button:hover a::before{
+        transform: scale(1,1);
+    }
+</style>
 </html>
