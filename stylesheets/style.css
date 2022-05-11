@@ -40,11 +40,12 @@
     justify-content: center;
     align-items: center;
     z-index: 10;
+    animation: none;
 }
 
 .preloader img{
-    height:40rem;
-    width:40rem;
+    height:90vh;
+    width: auto;
 }
 
 .disappear{
@@ -161,7 +162,7 @@ h5{
         font-size: large;
         font-weight: 600;
         margin-left: 10px;
-        background-image: url(../Images/jmun-logo-official.jpg);
+        background-image: url(../Images/jmun-logo-official.png);
         background-size: cover;
         width: 10rem;
         height: 6rem;
@@ -514,8 +515,9 @@ footer{
     background:transparent;
 }
 .col img{
-    width: 20px;
-    height: 20px;
+    width: 80px;
+    padding: 0px;
+    margin: 0px;
 }
 
 .wrapper .button{
