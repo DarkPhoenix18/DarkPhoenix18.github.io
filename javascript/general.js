@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function() { // On DOM Load initia
         mm = String(today.getMonth() + 1).padStart(2, "0"),
         yyyy = today.getFullYear(),
         nextYear = yyyy + 1,
-        dayMonth = "06/16/",
+        dayMonth = "07/14/",
         birthday = dayMonth + yyyy;
     
     today = mm + "/" + dd + "/" + yyyy;
