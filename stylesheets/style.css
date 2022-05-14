@@ -202,8 +202,8 @@ h5{
         display: none;
     }
     
-    .about-toggle:checked ~ .about,.committee-toggle:checked ~ .committee,
-    .register-toggle:checked ~ .register{
+    .about-label-toggle:checked ~ .about,.committee-label-toggle:checked ~ .committee,
+    .register-label-toggle:checked ~ .register{
         transform: scale(1,1);
         width: max-content;
         height: max-content;
@@ -294,7 +294,6 @@ h5{
 .homelogo{
     max-width:16rem;
     max-height: 14rem;
-    margin-bottom: 0;
 }
 
 .jmun{
@@ -378,9 +377,18 @@ h5{
     font-size: 23px;
 }
 .read-more-btn{
-    color: rgb(46, 46, 46);
-    font-size: 18px;
+    color: black;
+   font-size: 18px;
     font-weight: 600;
+    padding: .5rem .25rem;
+    margin: .5rem;
+    border: 2px solid black;
+    cursor: pointer;
+    transition: .2s ease-in;
+}
+.read-more-btn:hover{
+   background-color: rgba(0,0,0,.1);
+    
 }
 .read-more-text{
     display: none;
@@ -426,10 +434,13 @@ h5{
         padding-top: 6vh;
     }
     .hbox{
+        align-items: center;
         padding: 1rem;
         justify-content: center;
     }
-    
+    .homelogo{
+        margin-top: 10rem;
+    }
     .navbarlogo{
         width:8rem;
         height: 5rem;
@@ -442,7 +453,7 @@ h5{
 
 /* --------------------------------------Countdown----------------------------------------------- */
 .countdown{
-    width: max-content;
+    width: fit-content;
     height: fit-content;
     text-align: center;
 }
@@ -484,7 +495,7 @@ h5{
 
 /* ----------------------------------------------------Footer Styling--------------------------------------------------------- */
 footer{
-    max-height: 30rem;
+    height: fit-content;
     background-color: black;
     padding: 30px;
 }
@@ -497,7 +508,7 @@ footer{
 }
 .col{
     background-color: black;
-    height:8rem ;
+    min-height:8rem;
     width: 20rem;
 }
 .footer-heading{
