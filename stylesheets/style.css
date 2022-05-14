@@ -128,9 +128,10 @@ h5{
         margin-bottom: 10px;
         font-size: 18px;
         text-transform: uppercase;
-        width: 90%;
+        width: 95%;
         padding: 5px;
         position: relative;
+
     }
     
     nav li a{
@@ -143,6 +144,7 @@ h5{
     nav li:hover{
         background-color:rgba(250,250,250,.1);
         border-radius: 5px;
+        transition: transform 200ms ease-in-out;
     }
     
     .nav-toggle:checked ~ nav{
@@ -192,32 +194,37 @@ h5{
         position: relative;
         transform: scale(0,0);
         transform-origin: top;
-        transition: transform 200ms ease-in-out;
+        /* display: none; */
         height: 0;
         width: 0;
+        opacity: 0;
     }
-    
-    nav li ul{
+
+    nav li ul li{
         margin-top: 10px;
-        display: none;
+        width: fit-content;
+        /* display: none; */
     }
     
     .about-toggle:checked ~ .about,.committee-toggle:checked ~ .committee,
     .register-toggle:checked ~ .register{
         transform: scale(1,1);
         width: max-content;
-        height: max-content;
+        height: max-content; 
+        /* display: block; */
+        opacity: 1;
+        transition: 250ms all ease-in-out 100ms;
     }
 
-    .about-toggle:checked ~ .about a,.committee-toggle:checked ~ .committee a,
+     .about-toggle:checked ~ .about a,.committee-toggle:checked ~ .committee a,
     .register-toggle:checked ~ .register a{
         opacity: 1;
-        transition: opacity 250ms ease-in-out 250ms;
-    }
+        transition: opacity 150ms ease-in-out 250ms;
+     } 
 
-    .about-label-toggle, .register-label-toggle, .committee-label-toggle{
-        left: 95%;
-    }
+     .about-label-toggle, .register-label-toggle, .committee-label-toggle{
+        margin-left: 50%;
+    } 
     
     nav li input{
         display: none;
@@ -234,7 +241,7 @@ h5{
         }
     
         nav{
-            all: unset;
+          all: unset;
           display: inline;
           width: auto;
           background-color: transparent;
@@ -261,24 +268,30 @@ h5{
         nav li ul{
             all: unset;
             position: absolute;
-            display:block;
-            left: 0;
         }
         nav li ul li{
             width:max-content;
         }
     
         nav .drop:hover ul{
-            display: block;
+            transform: scale(1,1);
+            transform: translate(-6rem,2rem);
+            transition: 150ms all ease-in-out 250;
+            width: fit-content;
+            height: fit-content;
+            border-radius: 10px;
+            background-color: rgba(250, 250, 250, .2);
         }
     
         .about,.committee,.register{
             all: unset;
-            display: none;
-            width: max-content;
-            height: max-content;
+            transform:scale(0,0);
+            transform-origin: top;
+            transition: 250ms all ease-in-out;
+            width: 0;
+            height: 0;
             position: absolute;
-            background-color: rgb(0,0,0,.2);
+            /* background-color: rgb(0,0,0,.6); */
         }
     }
 /* Banner Styling */
@@ -294,7 +307,6 @@ h5{
 .homelogo{
     max-width:16rem;
     max-height: 14rem;
-    margin-bottom: 0;
 }
 
 .jmun{
@@ -378,9 +390,18 @@ h5{
     font-size: 23px;
 }
 .read-more-btn{
-    color: rgb(46, 46, 46);
-    font-size: 18px;
+    color: black;
+   font-size: 18px;
     font-weight: 600;
+    padding: .5rem .25rem;
+    margin: .5rem;
+    border: 2px solid black;
+    cursor: pointer;
+    transition: .2s ease-in;
+}
+.read-more-btn:hover{
+   background-color: rgba(0,0,0,.1);
+    
 }
 .read-more-text{
     display: none;
@@ -426,10 +447,13 @@ h5{
         padding-top: 6vh;
     }
     .hbox{
+        align-items: center;
         padding: 1rem;
         justify-content: center;
     }
-    
+    .homelogo{
+        margin-top: 10rem;
+    }
     .navbarlogo{
         width:8rem;
         height: 5rem;
@@ -442,7 +466,7 @@ h5{
 
 /* --------------------------------------Countdown----------------------------------------------- */
 .countdown{
-    width: max-content;
+    width: fit-content;
     height: fit-content;
     text-align: center;
 }
@@ -484,7 +508,7 @@ h5{
 
 /* ----------------------------------------------------Footer Styling--------------------------------------------------------- */
 footer{
-    max-height: 30rem;
+    height: fit-content;
     background-color: black;
     padding: 30px;
 }
@@ -497,7 +521,7 @@ footer{
 }
 .col{
     background-color: black;
-    height:8rem ;
+    min-height:8rem;
     width: 20rem;
 }
 .footer-heading{
